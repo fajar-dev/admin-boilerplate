@@ -13,7 +13,10 @@ export default defineNuxtConfig({
   },
 
   colorMode: {
-    preference: 'light'
+    preference: 'light',
+    fallback: 'light',
+    componentName: 'ColorScheme',
+    classSuffix: ''
   },
 
   css: ['~/assets/css/main.css'],

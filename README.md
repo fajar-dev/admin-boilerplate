@@ -1,4 +1,6 @@
-# Nuxt Starter Template
+# Nuxt 4 FE - frontend boilerplate
+
+Frontend boilerplate dibangun dengan Nuxt 4, TypeScript, Tailwind CSS, NuxtUI, Zod, Axios
 
 ## Quick Start
 
