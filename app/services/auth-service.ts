@@ -2,6 +2,7 @@ import axios from "axios"
 import { apiService } from "./api-service"
 import { handleServiceError } from "../composables/error-helper"
 import type { ApiResponse, AuthResponse, User } from "../types/auth"
+import type { UpdateProfilePayload, UpdatePasswordPayload } from "../types/profile"
 
 export class AuthService {
     private readonly ACCESS_TOKEN_KEY = 'accessToken'
@@ -146,6 +147,36 @@ export class AuthService {
             if (window.location.pathname !== '/auth/sign-in') {
                 navigateTo('/auth/sign-in')
             }
+        }
+    }
+
+    async updateProfile(payload: UpdateProfilePayload): Promise<ApiResponse<User>> {
+        try {
+            const response = await apiService.client.put<ApiResponse<User>>('/auth/profile', payload, {
+                headers: {
+                    Authorization: `Bearer ${this.token.value}`
+                }
+            })
+            if (response.data.success && response.data.data) {
+                this.user.value = response.data.data
+                localStorage.setItem(this.USER_KEY, JSON.stringify(this.user.value))
+            }
+            return response.data
+        } catch (error: any) {
+            return handleServiceError(error)
+        }
+    }
+
+    async updatePassword(payload: UpdatePasswordPayload): Promise<ApiResponse<null>> {
+        try {
+            const response = await apiService.client.put<ApiResponse<null>>('/auth/password', payload, {
+                headers: {
+                    Authorization: `Bearer ${this.token.value}`
+                }
+            })
+            return response.data
+        } catch (error: any) {
+            return handleServiceError(error)
         }
     }
 

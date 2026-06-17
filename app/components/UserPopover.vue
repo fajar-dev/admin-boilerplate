@@ -33,10 +33,19 @@
         <!-- Actions -->
         <div class="pt-2 border-t border-neutral-200 space-y-0.5">
           <UButton
+            color="neutral"
+            variant="ghost"
+            icon="i-lucide-user"
+            class="w-full justify-start"
+            to="/profile"
+          >
+            Profile
+          </UButton>
+          <UButton
             color="error"
             variant="ghost"
             icon="i-lucide-log-out"
-            class="w-full"
+            class="w-full justify-start"
             @click="handleLogout"
           >
             Logout

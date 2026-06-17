@@ -6,6 +6,16 @@ Format: [Semantic Versioning](https://semver.org/) — `MAJOR.MINOR.PATCH`
 
 ---
 
+## [1.2.0] — 2026-06-17
+
+### Added
+- **Profile Configuration Page** (`/profile`) — A tabbed page ("Informasi" & "Password") to manage the authenticated user's profile information and security.
+- **UserPopover Profile Link** — Added a direct shortcut link to the profile configuration page in the UserPopover dropdown.
+- **Google Login Password Creation** — Allowed Google Login accounts (which don't have a password set in the DB) to create their first password without verifying an old password.
+- **Profile Types & Services** — Created `profile.d.ts` and updated `auth-service.ts` to support PUT updates for profile details and passwords.
+
+---
+
 ## [1.1.0] — 2026-06-17
 
 ### Added
