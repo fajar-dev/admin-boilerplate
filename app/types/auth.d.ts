@@ -4,6 +4,7 @@ export interface User {
     email: string
     photo: string
     isActive: boolean
+    hasPassword?: boolean
 }
 
 export interface AuthData {

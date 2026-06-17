@@ -174,6 +174,10 @@ export class AuthService {
                     Authorization: `Bearer ${this.token.value}`
                 }
             })
+            if (response.data.success && this.user.value) {
+                this.user.value.hasPassword = true
+                localStorage.setItem(this.USER_KEY, JSON.stringify(this.user.value))
+            }
             return response.data
         } catch (error: any) {
             return handleServiceError(error)

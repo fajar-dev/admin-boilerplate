@@ -46,7 +46,7 @@
               </div>
             </div>
           </div>
-          <div class="space-y-1.5 text-center sm:text-left">
+          <div class="space-y-1.5">
             <h3 class="text-sm font-semibold text-neutral-900">Profile Picture</h3>
             <p class="text-xs text-neutral-500 pb-1">Supports JPG or PNG. Max size 2MB.</p>
             <div class="flex gap-2 justify-center sm:justify-start">
@@ -82,7 +82,7 @@
       <!-- Tab Content: Password -->
       <div v-if="activeTab === 'password'" class="p-6 space-y-6">
         <UForm :schema="passwordSchema" :state="formPassword" @submit="handlePasswordSubmit" class="space-y-4">
-          <UFormField name="oldPassword">
+          <UFormField v-if="authState.user?.hasPassword" name="oldPassword">
             <template #label>
               <div class="flex flex-col gap-0.5">
                 <span class="font-medium text-sm text-neutral-900">Current Password</span>
