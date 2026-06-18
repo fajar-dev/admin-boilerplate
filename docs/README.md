@@ -1,4 +1,4 @@
-# 📚 Dokumentasi Project — SIMAS (Sistem Management Asset)
+# 📚 Dokumentasi Project — Nuxt Boilerplate
 
 > **WAJIB DIBACA oleh AI Agent sebelum memulai pekerjaan apapun di project ini.**
 

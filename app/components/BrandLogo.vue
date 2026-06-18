@@ -5,10 +5,10 @@
     </div>
     <div v-if="!isCollapsed" class="min-w-0">
       <h1 class="text-sm font-medium text-neutral-900 truncate">
-        SIMAS
+        Nuxt Boilerplate
       </h1>
       <p class="text-xs text-neutral-600">
-        Sistem Management Asset
+        Admin Dashboard
       </p>
     </div>
   </div>

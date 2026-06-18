@@ -19,8 +19,8 @@ useHead({
   }
 })
 
-const title = 'Dashboard - Growth Metric'
-const description = 'Executive Growth Metric Dashboard PT Media Antar Nusa'
+const title = 'Nuxt Boilerplate - Admin Dashboard'
+const description = 'Nuxt Boilerplate — Starter template admin dashboard'
 
 useSeoMeta({
   title,

@@ -1,8 +1,8 @@
-# 🏗️ Project Overview — SIMAS
+# 🏗️ Project Overview — Nuxt Boilerplate
 
 ## Tentang Project
 
-**SIMAS** (Sistem Management Asset) — Dashboard admin untuk PT Media Antar Nusa (Nusanet).
+**Nuxt Boilerplate** — Starter template admin dashboard.
 SPA (Single Page Application) dengan Nuxt 4, NuxtUI v4, dan Tailwind CSS v4.
 
 - **SSR**: Disabled (`ssr: false`)

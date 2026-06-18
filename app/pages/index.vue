@@ -1,9 +1,9 @@
 <template>
   <div class="space-y-6">
-    <!-- Growth Metric Executive Header using reusable custom slots -->
+    <!-- Dashboard Header -->
     <Header
       title="Dashboard"
-      description="Rekap dari pertumbuhan penjualan"
+      description="Selamat datang di admin dashboard"
     >
     </Header>
   </div>

@@ -6,89 +6,20 @@ Format: [Semantic Versioning](https://semver.org/) — `MAJOR.MINOR.PATCH`
 
 ---
 
-## [1.2.0] — 2026-06-17
-
-### Added
-- **Profile Configuration Page** (`/profile`) — A tabbed page ("Informasi" & "Password") to manage the authenticated user's profile information and security.
-- **UserPopover Profile Link** — Added a direct shortcut link to the profile configuration page in the UserPopover dropdown.
-- **Google Login Password Creation** — Allowed Google Login accounts (which don't have a password set in the DB) to create their first password without verifying an old password.
-- **Profile Types & Services** — Created `profile.d.ts` and updated `auth-service.ts` to support PUT updates for profile details and passwords.
-
----
-
-## [1.1.0] — 2026-06-17
-
-### Added
-- **User Management Page** (`/user`) — A brand new CRUD page displaying users using `<UTable>`, filtering by active status, and paginated searches.
-- **MinIO Avatar Image Upload** — Real-time user photo uploads utilizing a custom profile avatar selector in both Add and Edit modals, integrating with the new `/api/upload` endpoint.
-- **User Service and Types** — Structured type interfaces in `user.d.ts` and Axios API methods in `user-service.ts`.
-- **Sidebar Nav Link** — Registered the "Users" link inside sidebar navigation.
-
----
-
-## [1.0.0] — 2026-06-17
+## [0.1.0] — 2026-06-18
 
 ### 🎉 Initial Release
 
-#### Features
-- **Authentication**
-  - Login dengan email/password
-  - Login dengan Google OAuth (authorization code flow)
-  - Forgot password (kirim reset link via email)
-  - Reset password (validasi token + set password baru)
-  - Auto refresh token via Axios interceptor
-  - Global auth middleware (redirect ke sign-in jika belum login)
-  - Guest middleware (redirect ke home jika sudah login)
-
-- **Contact CRUD**
-  - Listing dengan pagination server-side
-  - Search dengan debounce 300ms
-  - Configurable items per page (10, 25, 50, 100)
-  - Add contact modal
-  - Edit contact modal
-  - Delete contact dengan generic DeleteModal
-  - Action dropdown per row (edit, delete)
-
-- **Layout & Navigation**
-  - Dashboard layout dengan collapsible sidebar
-  - Auth layout dengan split-screen design
-  - Responsive mobile sidebar (drawer overlay)
-  - Sidebar navigation dengan group support
-  - User profile popover (sidebar + mobile header)
-  - Brand logo component
-
-- **Design System**
-  - Custom green color palette (primary: #009838)
-  - Custom red + yellow palettes
-  - Geist font from Google Fonts
-  - NuxtUI v4 theming via app.config.ts
-  - Tailwind CSS v4 with @theme static tokens
-
-#### Architecture
-- Service-based API layer (Axios + interceptors)
-- Singleton service pattern
-- Global error handler with toast notifications
-- TypeScript strict mode
-- Zod schema validation for forms
-- Composable pattern for auth & navigation state
-
-#### Tech Stack
-- Nuxt 4.4.6
-- NuxtUI 4.7.1
-- Tailwind CSS 4.3.0
-- Zod 4.4.3
-- Axios 1.16.1
-- TypeScript 6.0.3
-- Bun 1.3.1
-
-### 📝 Documentation
-- Project overview & architecture
-- Coding standards & naming conventions
-- NuxtUI component usage guide
-- Component & modal patterns
-- Service layer documentation
-- Page pattern templates
-- This changelog
+- Nuxt Boilerplate — Starter template admin dashboard
+- Nuxt 4, NuxtUI v4, Tailwind CSS v4, TypeScript, Zod, Axios
+- Authentication (email/password, Google OAuth, forgot/reset password)
+- User management CRUD
+- Contact CRUD
+- Profile configuration
+- Dashboard layout dengan collapsible sidebar
+- Auth layout dengan split-screen design
+- Custom design system (green primary, Geist font)
+- Dokumentasi lengkap di `docs/`
 
 ---
 

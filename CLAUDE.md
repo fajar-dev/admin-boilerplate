@@ -1,4 +1,4 @@
-# SIMAS — Sistem Management Asset (Nuxt 4 Dashboard)
+# Nuxt Boilerplate — Admin Dashboard (Nuxt 4)
 
 > **BACA SEMUA INSTRUKSI INI SEBELUM MENULIS KODE APAPUN.**
 > Dokumentasi lengkap ada di folder `docs/`. File ini adalah ringkasan aturan kritis.
